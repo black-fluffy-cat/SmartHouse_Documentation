@@ -1,0 +1,13 @@
+authtoken: <NGROK_AUTH_TOKEN>
+
+tunnels:
+ tcp_ssh:
+  proto: tcp
+  addr: 22
+ http_server:
+  proto: http
+  addr: 5000
+  bind_tls: true
+ vnc_server:
+  proto: tcp
+  addr: 5901

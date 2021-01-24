@@ -1,0 +1,2 @@
+RPi 4 idle temp without fan: 68C
+RPi 4 idle temp with fan: 38C

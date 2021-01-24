@@ -1,0 +1,34 @@
+1. Set server url at raspberry
+POST https://3d0f9dfb6e68.ngrok.io/setServerUrl/ //insert proper raspberry url
+JSON Body: {"serverUrl":"https://e21d233caa64.ngrok.io"} //insert proper server url
+
+2. Ping Raspberry to make photo and send it to server
+POST https://3d0f9dfb6e68.ngrok.io/alertPhoto //insert proper raspberry url
+Body: empty
+
+3. Ping server about node ngrok addresses
+POST http://192.168.0.107:8080/receiveNgrokAddresses //insert proper server url
+JSON Body: {
+    "senderId": "PC",
+    "tunnelsList": [
+        {
+            "name": "tcp_tunnel",
+            "publicUrl": "tcp://2.tcp.ngrok.io:17821",
+            "addr": "localhost:22"
+        },
+        {
+            "name": "http_server_1",
+            "publicUrl": "https://f2302c567a1f.ngrok.io",
+            "addr": "http://localhost:8080"
+        }
+    ]
+}
+
+4. Ping server with simple heartbeat call
+POST http://192.168.0.107:8080/heartbeat //insert proper server url
+JSON Body:
+{
+    "deviceName": "PC",
+    "timeFromStart": "0", //time from device boot
+    "timeFromAlert": "0" //time from device alert (every node can have different alert event)
+}
