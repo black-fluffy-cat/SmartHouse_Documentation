@@ -1,10 +1,10 @@
 # SmartHouse Arduino and Raspberry codes
 
-Source codes for Arduino and scripts for Raspberry. Part of SmartHouse project.
-
-
-### [Server application (new - Ktor)](https://github.com/black-fluffy-cat/SmartHouseServer)
-### [Images of external devices](Images%26Screenshots)
+Documentation for SmartHouse project which currently consists of 4 repositories:
+#### [Documentation](https://github.com/black-fluffy-cat/SmartHouse_Documentation)
+#### [Server application](https://github.com/black-fluffy-cat/SmartHouseServer)
+#### [Arduino nodes source codes](https://github.com/black-fluffy-cat/SmartHouse_ArduinoCodes)
+#### [Raspberry nodes scripts](https://github.com/black-fluffy-cat/SmartHouse_Raspberry)
 
 ## Server (KtorSmartHouseServer)
 
@@ -16,7 +16,7 @@ Server written in Ktor, receives data from nodes with sensors, processes it and 
 - '/receiveNgrokAddresses' - receives POST request with Ngrok addresses of sender (node)
 - '/receivePhoto' - receives POST request with photo as Multipart file
 
-## ArduinoCodes
+## Arduino nodes source codes
 
 Arduino codes for nodes with sensors
 
@@ -28,13 +28,23 @@ NodeMCU with BME280 sensor:
 - sends HeartbeatData to server every 30 seconds
 - sends BME280Data to server every 10 seconds
 
-## Documents
+## Raspberry nodes scripts
 
-Documents and charts of SmartHouse systems
-Contains valuable notes about how to setup server, raspberry and other nodes
+Raspberry scripts for nodes with cameras
+
+Raspberry Pi Zero with normal camera and Raspberry Pi Zero with IR wide-angle camera:
+- sends HeartbeatData to server every 30 seconds
+- takes and sends image to server after receiving POST message on '/alertPhoto' endpoint
+
+Raspberry Pi 4B - currently used as Server
+
 
 # SmartHouse Documentation
 Documentation for SmartHouse project that contains informations about used sensors, devices, created Android application and Ktor server. Main target of this project is to create tools that will allow to monitor, control and gather data from external devices for various purposes (e.g. SmartHouse) but also to get experience and expand knowledge.
+
+## Documents(Documents)
+Documents and charts of SmartHouse systems
+Contains valuable notes about how to setup server, raspberry and other nodes
 
 ## Used nodes
 There are four main nodes that are used in current version of project:
