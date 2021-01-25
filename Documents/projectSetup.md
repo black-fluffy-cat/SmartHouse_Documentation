@@ -51,7 +51,13 @@ Script launch while boot:
 Setup Ngrok at Raspberry:
 1. https://www.techcoil.com/blog/how-to-put-your-raspberry-pi-server-on-the-internet-with-ngrok/
 
+Setup Raspberry Pi 4 with Pi Ubuntu 20.04:
+1. Problems with vnc - errors with fonts - UNRESOLVED
+2. Make /etc/rc.local executable - is not by default
+3. Execute rc.local commands as user, '$ su - user -c "cmd" &'
+4. Then logs files saves into proper directory
+
 Notes:
-1. Server saves NgrokAddresses logs to file
-2. Server saves Monitoring logs to file
+1. Server saves NgrokAddresses logs to file - FIXED
+2. Server saves Monitoring logs to file - FIXED
 3. Raspberry saves last known server address to file, if raspberry will reset it will use last known address, uses default if file not exists
