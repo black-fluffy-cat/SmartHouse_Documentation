@@ -61,3 +61,10 @@ Notes:
 1. Server saves NgrokAddresses logs to file - FIXED
 2. Server saves Monitoring logs to file - FIXED
 3. Raspberry saves last known server address to file, if raspberry will reset it will use last known address, uses default if file not exists
+4. https://blog.robertelder.org/commands-raspberry-pi-camera/
+5. https://stackoverflow.com/questions/64279899/picamera-stream-to-youtube-with-ffmpeg-and-capture-image-every-second
+6. https://www.youtube.com/watch?v=ztjT2YqQ2Hc
+7. https://stackoverflow.com/questions/45225303/how-to-pipe-picamera-video-to-ffmpeg-with-subprocess-python
+8. https://zengliyang.wordpress.com/2021/01/04/raspberry-pi-4b-ubuntu-20-04-camera/
+9. Raspberry Pi Zero is way too weak to handle recording and streaming at the same time
+10. When using wide-angle camera, 4:3 resolution ratio should be set for recordings.
