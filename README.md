@@ -16,6 +16,7 @@ Server written in Ktor, receives data from nodes with sensors, processes it and 
 - '/receiveNgrokAddresses' - receives POST request with Ngrok addresses of sender (node)
 - '/receivePhoto' - receives POST request with photo as Multipart file
 - '/sensor/postValues' - receives POST request with SensorValues and saves them to file
+- '/receiveVideo' - receives POST request with video as Multipart file
 
 ## Arduino nodes source codes
 
