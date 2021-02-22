@@ -38,6 +38,17 @@ Raspberry Pi Zero with normal camera and Raspberry Pi Zero with IR wide-angle ca
 - sends HeartbeatData to server every 30 seconds
 - takes and sends image to server after receiving POST message on '/alertPhoto' endpoint
 
+### Raspberry as monitoring node
+
+- Acts as monitoring node, starts recording after receiving POST message on '/startMonitoring' endpoint
+- Sends recorded files 30s long, resolution 1024x768 to Server
+- Simultaneously streams recorded preview to Server (with 640x480 resolution), if it is listening for stream on port 8000
+- Allows to take photos simultaneously with recording and preview, sends photo (with 1640x1232 resolution) to server
+- '/isMonitoringWorking' - monitoring healthcheck
+- '/stopMonitoring' - stops monitoring
+
+Time of creating monitoring ~ half year when readings once a week :) And about 20h straight when got necessary knowledge
+
 Raspberry Pi 4B - currently used as Server
 
 
