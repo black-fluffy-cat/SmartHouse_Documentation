@@ -3,3 +3,7 @@ arp-scan --interface=wlp2s0 --localnet
 vncserver -nolisten tcp -nevershard -dontdisconnect :1
 
 nc -l 8000 | vlc --demux=h264 - //launch monitoring preview
+
+
+crontab launch on restart:
+@reboot /home/pi/Desktop/smarthouse_projects/SmartHouse_Raspberry/code/CameraNode/startCameraNode.sh
