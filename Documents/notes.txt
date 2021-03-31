@@ -1,2 +1,17 @@
 RPi 4 idle temp without fan: 68C
 RPi 4 idle temp with fan: 38C
+
+RPi average recordings sizes:
+
+5 MPx ZeroCam, 30fps, 1024x768, 30s length of video
+Moving camera - 30MB
+Outside = 12MB
+Inside = 4MB
+Average recording size from recordings from 3.5 day = 4.5MB
+Night (black screen) = 450-520KB
+
+NoIR camera, 30fps, 1024x768, 30s length of video
+Inside = 2.2-4MB
+Moving = 20MB
+Night (IR vision) = 5.5-5.8MB
+
